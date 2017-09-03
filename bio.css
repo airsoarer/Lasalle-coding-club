@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+h1{
+    font-size: 50px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    color:transparent;
+}
+
+.section{
+    height: 500px;
+}
+
+#container{
+    padding-bottom: 15px;
+    margin: 15px;
+}
+
+#aboutMe{
+    float:left;
+    width: 50%;
+    background-color: #00838f;
+}
+
+#iLike{
+    float: right;
+    width: 50%;
+}
+
+#coding{
+    float: left;
+    width: 50%;
+}
+
+#future{
+    float: right;
+    width: 50%;
+    background-color: #00838f;
+}
+
+#websites{
+    float: left;
+    width: 50%;
+}
+
+#buttons{
+    float: right;
+    width: 50%;
+}
