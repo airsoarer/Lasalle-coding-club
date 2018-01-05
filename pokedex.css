@@ -1,0 +1,17 @@
+body{
+    background-position: center;
+    text-align: center;
+    background-color: lightcoral;
+    color:white;
+}
+
+img{
+    margin: 5px;
+    width: 250px;
+    height: 350px;
+    background-position: center;
+}
+
+.card{
+    background-color: #0f52ba;
+}
