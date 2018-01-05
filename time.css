@@ -1,0 +1,9 @@
+body{
+    background-color:lightblue;
+    color: #5b5b5b;
+}
+
+h1{
+    display:inline-block;
+    font-size: 215px;
+}
