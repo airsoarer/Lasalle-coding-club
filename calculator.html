@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="./calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Simple Calculator</u></h1>
+        <div class="col s12" class="calcContainer">
+            <div class="row" id="displayWindow">
+                <h3 class="h"></h3>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="col s3" value="7">7</button>
+                    <button class="col s3" value="8">8</button>
+                    <button class="col s3" value="9">9</button>
+                    <button class="col s3" value="/">/</button>
+                </div>
+                <div class="row">
+                    <button class="col s3" value="4">4</button>
+                    <button class="col s3" value="5">5</button>
+                    <button class="col s3" value="6">6</button>
+                    <button class="col s3" value="*">&times;</button>
+                </div>
+                <div class="row">
+                    <button class="col s3" value="1">1</button>
+                    <button class="col s3" value="2">2</button>
+                    <button class="col s3" value="3">3</button>
+                    <button class="col s3" value="-">-</button>
+                </div>
+                <div class="row">
+                    <button class="col s3" value="0">0</button>
+                    <button class="col s3" value=".">.</button>
+                    <button class="col s3" value=" ">C</button>
+                    <button class="col s3" value="+">+</button>
+                </div>
+                <div class="row">
+                    <button id="equal" class="col s12" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

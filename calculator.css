@@ -1,0 +1,26 @@
+body{
+    background-color: lightseagreen;
+}
+
+button{
+    height: 50px;
+    background-color: #2b2b2b;
+    color: white !important;
+    font-size: 30px !important;
+}
+
+#displayWindow{
+    background-color: ghostwhite;
+    border: black .02px solid;
+    height: 75px;
+    font-size: 50px;
+}
+
+.calcContainer{
+    width: 50%;
+    background-color: lightseagreen;
+}
+
+.h{
+    margin-left: 5px;
+}
