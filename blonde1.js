@@ -16,10 +16,11 @@ function init(){
   // Get firebase reference
   var ref = firebase.database().ref("Chatrooms");
   // Get data from firebase
-  ref.once('value', function(snapshot){
+  ref.on('child_added', function(snapshot){
     var data = snapshot.val();
     // Get Chatroom uid (Unique ID)
     var key = snapshot.key;
+    console.log(key)
 
 
     // Make div for chatroom on html
@@ -27,6 +28,11 @@ function init(){
     // Make div id and class
     div.className = "chatroomDiv";
     div.id = key + "div";
+
+    // Make a content div
+    var contentDiv = document.createElement("div");
+    contentDiv.className = "contentDiv";
+    contentDiv.id = key + "contentDiv";
 
     // Make a tag
     var a = document.createElement("a");
@@ -37,17 +43,20 @@ function init(){
     a.id = key + "a";
     $(a).attr("src", "chatroom.html?room=" + key);
     // Append to chatroomDiv
-    div.appendChild(a);
+    contentDiv.appendChild(a);
 
     // Make description tag
-    var descript = document.createElement("h5");
+    var descript = document.createElement("p");
     // Set textContent
     descript.textContent = data.Description;
     // Create id and className
     descript.className = "chatroomDescript";
     descript.id = key + "descript";
     // Append to chatroomDiv
-    div.appendChild(descript);
+    contentDiv.appendChild(descript);
+
+    // Append contentDiv to div
+    div.appendChild(contentDiv);
 
     //Append chatroomDiv to the groups div
     document.getElementById("groups").appendChild(div);

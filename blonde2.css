@@ -1,15 +1,12 @@
 body{
   background-color: #99CCFF;
   color: indigo;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 h1{
   text-align: center;
-  color: indigo;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .contenteditable{
@@ -21,4 +18,32 @@ h1{
 h3{
   text-align: center;
   color: indigo;
+}
+
+.groups{
+  margin-top: 100px;
+  width: 100%;
+  display: inline-flex;
+}
+
+.chatroomDiv{
+  background-color: lightcoral;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 33%;
+}
+
+.contentDiv{
+  margin-top: 25px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 24px;
+}
+
+p{
+  font-size: 18px;
 }
