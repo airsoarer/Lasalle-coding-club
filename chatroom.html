@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="blonde2.css">
+    <link rel="stylesheet" href="chatroom.css">
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="chatroom.js"></script>
+</head>
+<body>
+    <h1 id="chatroomName">Generic Chatroom</h1>
+    <div class="messages" id="messages">
+
+    </div>
+    <div class="inputs" id="inputs">
+        <input type="text" id="name" class="name" placeholder="Enter your Name: ">
+        <input type="text" id="message" placeholder="Enter your Message: ">
+        <button class="send">Send</button>
+    </div>
+</body>
+</html>

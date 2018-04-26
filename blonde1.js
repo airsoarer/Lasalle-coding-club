@@ -38,10 +38,10 @@ function init(){
     var a = document.createElement("a");
     // Set text
     a.textContent = data.Name;
-    // Create id and class
+    // Create id and class and source
     a.className = "chatroomA";
     a.id = key + "a";
-    $(a).attr("src", "chatroom.html?room=" + key);
+    a.setAttribute("href", "chatroom.html?room=" + key);
     // Append to chatroomDiv
     contentDiv.appendChild(a);
 
