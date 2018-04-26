@@ -1,7 +1,51 @@
 body{
-    text-align: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
 p{
-    font-size: 20px;
+  font-size: 20px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+input{
+  font-size: 18px;
+  width: 45%;
+  height: 25px;
+}
+
+button{
+  height: 30px;
+}
+
+.topBar{
+  height: 100px;
+  margin-top: 10px;
+  display:inline-flex;
+}
+
+.backImg{
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.title{
+  margin-top: 5px;
+}
+
+.inputs{
+  width: 100%;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.input{
+  display: inline-flex;
 }

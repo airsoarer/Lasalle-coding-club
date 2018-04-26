@@ -39,6 +39,11 @@ function init(){
 
     // Watch from SEND BUTTON CLICK
     $(".send").on('click', send);
+    $("#message").keyup(function(e){
+      if(e.keyCode === 13){
+        send();
+      }
+    });
 }
 
 function send(){
@@ -47,7 +52,9 @@ function send(){
     // Get message
     var message = $("#message").val();
 
-    // Get Firebase ref 
+    $("#messages").empty();
+
+    // Get Firebase ref
     var ref = firebase.database().ref("Chatrooms/" + uid + "/Messages");
 
     // Send data to Firebase
@@ -57,18 +64,18 @@ function send(){
     });
 
     // Get Message back and display it
-    ref.on("child_added", function(snapshot){
+    ref.on("value", function(snapshot){
         var data = snapshot.val();
         console.log(data);
-        
-        // Make p tag
-        var p = document.createElement("p");
-        p.textContent = data.Name + ": " + data.Message;
 
-        // Append newly made tag to HTML 
-        $(".messages").append(p);
+        for(var i in data.Messages){
+          // Make p tag
+          var p = document.createElement("p");
+          p.textContent = data.Messages[i].Name + ": " + data.Messages[i].Message;
 
-        $(".messages").empty()
+          // Append newly made tag to HTML
+          $(".messages").append(p);
+        }
     });
 
     $('#message').val('');
